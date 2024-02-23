@@ -1,0 +1,43 @@
+.calculator-card {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    width: 80%;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.calculator>button {
+    border-radius: 0;
+    border: black solid .5px;
+}
+
+
+.calculator>input {
+    display: box;
+    grid-column: span 4;
+    padding: 20px;
+    background-color: darkgray;
+    border: none;
+    font-size: 2em;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+
+}
+
+.operation-button {
+    background-color: orange;
+    border-radius: 0;
+    border: black solid .5px;
+
+}
